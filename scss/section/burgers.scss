@@ -1,0 +1,68 @@
+.burgers {
+    background-color: $yellow;
+}
+
+.burgers__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.col-left {
+    display: flex;
+    position: relative;
+    margin-top: rem(90px);
+}
+
+.burgers__picture {
+    
+    justify-items: center;
+    align-items: center;
+    height: 200px;
+}
+
+.burgers__composition {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: rem(90px);
+    height: rem(90px);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+    .burgers__composition-pic {
+        width: rem(46px);
+        height: rem(44px);
+    }
+
+    .burgers__composition--text {
+        text-align: center;
+    }
+
+.burgers__calories {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.col-right {
+
+}
+
+.section__title--burgers {
+    color: white;
+}
+
+.burgers__price {
+    display: inline-block;
+    font-family: 'gagalin';
+    font-size: rem(30px);
+}
+
+.burgers__composition {
+    background-color: #f08c33;
+}

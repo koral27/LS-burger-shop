@@ -1,0 +1,76 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.maincontent {
+    height: 100%;
+    min-height: 650px;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section {
+    height: 100%;
+    background-color: rgba(0,0,0,0.31);
+    min-width: 940px;
+    min-height: 650px;
+}
+
+.btn {
+    display: inline-block;
+}
+
+.order-link {
+    min-width: rem(98px);
+    padding: rem(10px) rem(17px);
+    border-radius: 5px;
+    background-color: $orange;
+    color: white;
+    text-decoration: none;
+    font-size: rem(13px);
+    font-weight: 500;
+    line-height: 1.42;
+    text-transform: uppercase;
+    transition: .5s;
+    display: inline-block;
+    &:hover {
+        background-color: darken($orange, 7%); //выбирает цвет orange и затемняет ео на 7%
+    }
+}
+
+.nav-sidebar {
+    position: fixed;
+    color: white;
+    right: rem(50px);
+    top: rem(90px);
+    text-align: center;
+}
+
+.nav-sidebar__list{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.nav-sidebar__item { 
+    display: flex; 
+    &:after {
+        content: '';
+        justify-content: center;
+        align-items: center;
+        @include circle(5px, #fff);
+        margin: rem(8px);
+        }
+    &:first-child {
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+}
+

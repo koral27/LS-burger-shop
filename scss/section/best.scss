@@ -1,0 +1,42 @@
+.best {
+    background-image: url('../img/bg/best-bg.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    //убрать в другое место
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    p {
+        color: #2f3234;
+        opacity: .8;
+    }
+}
+
+.section__title--best {
+    color: $dark;
+    padding: 0;
+    margin-top: rem(135px);
+    margin-bottom: rem(60px);
+}
+
+.best__list {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.best__item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 283px;
+    min-height: 255px;
+    text-align: center;
+    margin-right: rem(20px);
+}
+
+.best__pic {
+    height: rem(85px);
+}
+
+
+

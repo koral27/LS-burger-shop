@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'ubuntu', Arial, Helvetica, sans-serif;
+    line-height: 1.42; //интервал между строками
+    color: $dark;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%; // т.к. будет page scroll 
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    font-family: 'ubuntu';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: white;
+}
+
+//замена для display:none с тем отличием, что элемент убирается из DOM-дерева, а просто прячется
+.visuallyhidden { 
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap; //чтобы шрифт не переносился
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.nav-sidebar {
+    position: fixed;
+}
